@@ -1457,3 +1457,95 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* Conteneur de toutes les images */
+.container-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour chaque image */
+.container-images img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Effet au survol */
+.container-images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-color: #0073e6;
+}
+
+/* Ajustements pour tailles différentes */
+.container-images img:nth-child(1) {
+  width: 150px;
+  height: 150px;
+}
+.container-images img:nth-child(2) {
+  width: 100px;
+  height: 300px;
+}
+.container-images img:nth-child(3) {
+  width: 100px;
+  height: 100px;
+}
+.container-images img:nth-child(4) {
+  width: 200px;
+  height: 100px;
+}
+.container-images img:nth-child(5) {
+  width: 175px;
+  height: 100px;
+}
+/* Conteneur de toutes les images */
+.container-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour chaque image */
+.container-images img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Effet au survol */
+.container-images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-color: #0073e6;
+}
+
+/* Ajustements pour tailles spécifiques */
+.container-images img:nth-child(1) {
+  width: 200px;
+  height: 150px;
+}
+.container-images img:nth-child(2) {
+  width: 150px;
+  height: 150px;
+}
+.container-images img:nth-child(3) {
+  width: 150px;
+  height: 150px;
+}
