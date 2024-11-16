@@ -1501,11 +1501,11 @@ section,
 }
 .container-images img:nth-child(4) {
   width: 200px;
-  height: 100px;
+  height: 150px;
 }
 .container-images img:nth-child(5) {
-  width: 175px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
 }
 /* Conteneur de toutes les images */
 .container-images {
@@ -1548,4 +1548,19 @@ section,
 .container-images img:nth-child(3) {
   width: 150px;
   height: 150px;
+}
+.container-images img[src="images/symfony.png"]
+ {
+  width: 150px; /* Largeur réduite */
+  height: 100px; /* Hauteur réduite */
+}
+.container-images img[src="images/wordpress.png"]
+ {
+  width: 150px; /* Largeur réduite */
+  height: 150px; /* Hauteur réduite */
+}
+.container-images img[src="images/twig.jpg"]
+ {
+  width: 150px; /* Largeur réduite */
+  height: 125px; /* Hauteur réduite */
 }
