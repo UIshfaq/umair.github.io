@@ -117,32 +117,105 @@
             <div class="row justify-content-between gy-4 mt-4">
                 <div class="col-lg-8" data-aos="fade-up">
                     <div class="portfolio-description">
-                        <h2>Le projet Véliko est un projet que j'ai réalisées durant ma formation</h2>
+                       <h2>But du projet</h2>
+                        <p>
+                           - Développement d’un site web permettant de localiser les stations Vélib et de consulter le nombre de vélos disponibles (mécaniques ou électriques). <br>
+                            - Possibilité pour les utilisateurs de créer un compte, se connecter et ajouter des stations en favoris.<br>
+                            - Sécurisation du site et conformité aux normes RGPD pour protéger les données personnelles.<br>
+                            - Mise en place d’un espace administrateur pour assurer le bon fonctionnement et la gestion des erreurs.<br>
+                            - Travail en équipe avec une répartition des tâches et une communication régulière pour garantir la cohérence du projet.<br>
+                        </p>
+
+                        <h2>Informations sur le projet</h2>
+                        <p><b>Version actuelle : </b>V4.0.0</p>
+                        <p><b>Langages utilisés : </b>TWIG, PHP, JAVA</p>
+                        <p><b>Base de données : </b>MySQL</p>
+                        <p><b>Framework : </b>Symfony, EduFrame</p>
+                        <p><b>API : </b>API Véliko, OpenStreetMap</p>
+                        <h2>Les versions du projet</h2>
+                        <div class="versions-container">
+                            <div class="version">
+                                <p><b>V1.0.0 :</b><br>
+                                    - 1/ Affichage d’une map<br>
+                                    - 2/ Affichage des stations sur la map<br>
+                                    - 3/ Zoom +/-<br>
+                                    - 4/ Géolocalisation de la position du client sur la map<br>
+                                    - 5/ L'information bulle sur la station survolée par la souris<br>
+                                    - Nom de la station<br>
+                                    - Nombre de vélo disponible<br>
+                                    - Vélo classique<br>
+                                    - Vélo électrique<br>
+                                </p>
+                            </div>
+                            <div class="version">
+                                <p><b>V2.0.0 :</b><br>
+                                    - Inscription utilisateur<br>
+                                    - Validation de l’identité de l’utilisateur<br>
+                                    - Compte utilisateur<br>
+                                    - Changement de nom, prénom, date de naissance, adresse, code postal, ville<br>
+                                    - Changement de mot de passe sécurisé (faire une proposition)<br>
+                                    - Authentification<br>
+                                    - Déconnexion (logout)<br>
+                                    - Respect de la RGPD sur la possibilité de supprimer son compte<br>
+                                    - Mettre des stations en favori depuis la map et depuis l’espace utilisateur<br>
+                                </p>
+                            </div>
+                            <div class="version">
+                                <p><b>V3.0.0 :</b><br>
+                                    - Gestion des utilisateurs<br>
+                                    - Administration des utilisateurs (CRUD)<br>
+                                    - Supprimer un utilisateur. Attention si on supprime un utilisateur, on supprime aussi ses réservations.<br>
+                                    - Possibilité de bloquer un utilisateur<br>
+                                    - Possibilité de forcer le changement de mot de passe d’un utilisateur<br>
+                                    - Gestion du parc ⇒ MAP<br>
+                                    - La visualisation d’une MAP qui affiche l’ensemble des vélos en distinguant par un jeu de couleurs les vélos électriques ou pas.<br>
+                                </p>
+                            </div>
+                            <div class="version">
+                                <p><b>V4.0.0 :</b><br>
+                                    - Dashboard ⇒ STATS<br>
+                                    - Cette partie doit être présentée sous différentes formes : pourcentages, listes de données, graphiques, valeurs, …<br>
+                                    - Quel est l’utilisateur le plus actif ? (ex aequo possible)<br>
+                                    - Le nombre de vélos disponibles sur une station<br>
+                                    - Le nombre total de réservations sur une période<br>
+                                    - Le pourcentage de réservations sur une station<br>
+                                    - etc, etc<br>
+                                    - Cette partie doit être riche en qualité et en nombre de statistiques.<br>
+                        </div>
+                    </div>
+                        <br>
+                        <h2>Difficultés rencontrées</h2>
+                        <p>
+                        <h3>Base de données : </h3>
+                        <p>
+                            L'utilisation et l'optimisations des donées dans les différentes services de l'application.(Connexion, Station, Utilisateur, Reservation, Favoris, Admin, etc...).
+                        </p>
+                        <h3>API : </h3>
+                        <p>
+                            L'intégration de l'API Vélib' a posé plusieurs défis, notamment son implémentation correcte sur la carte, son accessibilité dans l'espace utilisateur et la synchronisation des données entre les deux.
+                        </p>
+
+                        <h2>Compétences acquises</h2>
 
                         <p>
-                            Dans le cadre de ce projet, nous avons développé un site web permettant aux utilisateurs de visualiser la position des stations de Vélib ainsi que le nombre de vélos disponibles, qu'ils soient mécaniques ou électriques. Les utilisateurs peuvent créer un compte, se connecter, et ajouter leurs stations préférées en favoris. Le site est sécurisé et conforme aux normes RGPD, assurant ainsi la protection des données personnelles et limitant les risques de cyberattaques. De plus, un espace administrateur a été mis en place, offrant un contrôle continu du site pour corriger d'éventuelles erreurs. Ce projet a été réalisé en équipe, avec une répartition des tâches et une communication régulière pour garantir la cohérence du site.
+                            Mes projets m'ont permis de développer des compétences en travail d'équipe avec GitHub, en gestion de bases de données, en sécurité et en développement avec Symfony. J'ai aussi appris à intégrer des API et à répondre aux besoins des clients.
                         </p>
+
+                        <h2>Conclusion</h2>
                         <p>
-                            J'ai eu l’occasion de développer plusieurs compétences durant mes projets. J’ai appris à travailler en équipe avec GitHub, notamment pour gérer les versions et résoudre des conflits. J’ai aussi réalisé des applications en suivant les demandes des clients, en utilisant des frameworks comme Symfony et en intégrant des API pour ajouter des fonctionnalités. Ces projets m’ont permis de mieux comprendre la gestion de bases de données, la sécurité, et les bonnes pratiques du développement.
+                            En conclusion, le projet Véliko a été une expérience enrichissante qui m'a permis d'appliquer mes connaissances, d'acquérir de nouvelles compétences et de mieux appréhender les défis du développement web.
                         </p>
-                        <p>
-                            Cependant, j’ai rencontré plusieurs difficultés, notamment sur le volet backend du projet. La gestion de la base de données et son intégration avec le code se sont révélées particulièrement complexes. Ces défis m'ont permis de développer de nouvelles compétences, de mieux comprendre le fonctionnement des bases de données et leur lien avec le code, tout en améliorant mes connaissances en développement backend.
-                        </p>
-                        <p>
-                            En conclusion, le projet Véliko a été une expérience enrichissante qui m'a permis de mettre en pratique mes connaissances en développement web et de développer de nouvelles compétences. J'ai appris à travailler en équipe, à gérer des projets complexes et à surmonter les difficultés techniques. Ce projet m'a également permis de mieux comprendre les enjeux du développement web et de me préparer à relever de nouveaux défis dans le futur.
-                        </p>
-                    </div>
                 </div>
 
-                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-info">
-                        <h3>Project information</h3>
-                        <ul>
-                            <li><strong>Category</strong>Web</li>
-                            <li><strong>Project date</strong> 24, Mars 2025</li>
-                        </ul>
-                    </div>
-                </div>
+<!--                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">-->
+<!--                    <div class="portfolio-info">-->
+<!--                        <h3>Project information</h3>-->
+<!--                        <ul>-->
+<!--                            <li><strong>Category</strong>Web</li>-->
+<!--                            <li><strong>Project date</strong> 24, Mars 2025</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
 
             </div>
 

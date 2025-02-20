@@ -1564,3 +1564,21 @@ section,
   width: 150px; /* Largeur réduite */
   height: 125px; /* Hauteur réduite */
 }
+.versions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacement entre les blocs */
+  flex-wrap: wrap; /* Empêche le retour à la ligne si l'écran est trop petit */
+}
+
+.version {
+  flex: 1;
+  min-width: 30%; /* Assure une largeur minimale */
+  max-width: 32%; /* Évite que les blocs prennent trop de place */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-sizing: border-box; /* Prévient les dépassements */
+}
+
