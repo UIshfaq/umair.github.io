@@ -1,265 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Détail de mon stage de 1er année</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: MyResume
-    * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-    * Updated: Jun 29 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console-IT — Détails du Projet | ISHFAQ UMAIR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #6366f1, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-divider { border-top: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
 </head>
+<body class="text-slate-200">
 
-<body class="portfolio-details-page">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 glass border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center text-sm font-semibold text-slate-300 hover:text-indigo-400 transition group">
+                <i data-lucide="arrow-left" class="mr-2 w-4 h-4 group-hover:-translate-x-1 transition"></i> Retour au Portfolio
+            </a>
+            <span class="hidden md:block text-xs uppercase tracking-widest text-slate-500 font-bold">Projet professionnel : Console-IT</span>
+        </nav>
+    </header>
 
-<header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-        <ul>
-            <li><a href="index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-<!--            <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>-->
-<!--            <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>-->
-<!--            <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>-->
-<!--            <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>-->
-<!--            <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>-->
-        </ul>
-    </nav>
-
-</header>
-
-<main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-        <div class="container">
-            <nav class="breadcrumbs">
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current">Projet veliko</li>
-                </ol>
-            </nav>
-            <h1>Portfolio Details</h1>
-        </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-        <div class="container" data-aos="fade-up">
-
-            <div class="portfolio-details-slider swiper init-swiper">
-                <script type="application/json" class="swiper-config">
-                    {
-                        "loop": true,
-                        "speed": 600,
-                        "autoplay": {
-                            "delay": 5000
-                        },
-                        "slidesPerView": "auto",
-                        "navigation": {
-                            "nextEl": ".swiper-button-next",
-                            "prevEl": ".swiper-button-prev"
-                        },
-                        "pagination": {
-                            "el": ".swiper-pagination",
-                            "type": "bullets",
-                            "clickable": true
-                        }
-                    }
-                </script>
-                <div class="swiper-wrapper align-items-center">
-
-                    <div class="swiper-slide">
-                        <img src="images/Site-Console-IT.png" alt="">
+    <main class="pt-32 pb-24">
+        <!-- Hero Project Section -->
+        <section class="container mx-auto px-6 mb-20">
+            <div class="max-w-4xl">
+                <h2 class="text-indigo-500 font-semibold mb-2 tracking-widest uppercase text-xs">Projet de Fin d'Études / Alternance</h2>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    Console-IT — <span class="text-gradient">Solution Mobile de Gestion de Terrain</span>
+                </h1>
+                
+                <div class="grid md:grid-cols-3 gap-8 p-8 glass rounded-2xl border border-slate-800">
+                    <div>
+                        <h3 class="text-slate-500 uppercase text-[10px] font-bold tracking-widest mb-2">Rôle</h3>
+                        <p class="text-white font-medium">Développeur Full-Stack</p>
                     </div>
-
-                    <div class="swiper-slide">
-                        <img src="images/site-footer.png" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="images/Site-Page-2.png" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="images/site-page-3.png" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="images/site-page-4.png" alt="">
-                    </div>
-
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-            <div class="row justify-content-between gy-4 mt-4">
-
-                <div class="col-lg-8" data-aos="fade-up">
-                    <div class="portfolio-description">
-                        <h2>Présentation de l'entreprise</h2>
-                        <h3>1. Identification de Console IT</h3>
-
-                        <p> <b>Nom</b> : Console IT <br>
-                            <b>Type</b> : SARL (Société à responsabilité limitée)<br>
-                            <b>Création</b> : Janvier 2020<br>
-                            <b>Localisation</b> : Pierrefitte-sur-Seine, France<br>
-                            <b>Effectif</b> : 3 à 5 employés<br>
-                            <b>Secteur </b>: Conseil en systèmes et logiciels informatiques<br>
-                            <b>Mission </b>: Accompagner les PME dans leur transformation digitale </p>
-                        <h3>2. Historique</h3>
-
-                        <p> Depuis sa création, Console IT a rapidement évolué, passant du conseil en systèmes informatiques à la cybersécurité et aux solutions cloud. Cette diversification lui a permis de répondre aux défis numériques des entreprises. Grâce à son innovation, elle s'est démarquée en région EMEA en quelques années. </p>
-                        <h3>3. Externalités</h3>
-                        <p>Les externalités de Console IT se déclinent en positives et négatives.</p>
-                        <ul>
-                            <li><strong>✅ Positives </strong> :</li>
-                            <li>Aide à la digitalisation des PME pour les rendre plus compétitives.</li>
-                            <li>Renforce la sécurité informatique et réduit les cyberattaques.</li>
-                            <li><strong>❌ Négative </strong> :</li>
-                            <li>Dépendance aux partenaires technologiques, pouvant entraîner des risques en cas de problèmes ou d'augmentation des coûts.</li>
-                        </ul>
-
-                        <h3>4. Responsabilité Sociétale des Entreprises (RSE)</h3>
-
-                        <p>Console IT réduit l'impact environnemental en favorisant l’hébergement cloud et la virtualisation, optimisant ainsi les ressources et limitant l’empreinte carbone de ses clients.</p>
-                        <h3>5. Orientations stratégiques</h3>
-                        <p>Pour l'avenir, Console IT a plusieurs axes stratégiques :</p>
-                        <ul>
-                            <li>Expansion en EMEA pour répondre à la demande croissante en services numériques.</li>
-                            <li>Développement de solutions sur mesure en cybersécurité et gestion des données.</li>
-                            <li>Adoption de nouvelles technologies pour rester innovant et compétitif.</li>
-                        </ul>
-
-                        <h3>6. Conformité RGPD(Règlement général sur la protection des données)</h3>
-                        <p>L'entreprise se conforme aux réglementations du RGPD, garantissant ainsi la protection des données personnelles de ses clients. Cela inclut la mise en place de systèmes sécurisés pour gérer les données sensibles, un élément essentiel dans un monde où la cybersécurité est primordiale.</p>
-
-                        <h3>7. Analyse SWOT(strengths, weaknesses, opportunities, and threats)</h3>
-                        <ul>
-                            <li><strong>Forces</strong> : Expertise et adaptation rapide.</li>
-                            <li><strong>Faiblesses</strong> : Taille réduite face aux grands acteurs</li>
-                            <li><strong>Opportunités</strong> : Forte demande en cybersécurité et cloud</li>
-                            <li><strong>Menaces</strong> :Cyberattaques et dépendance aux partenaires</li>
-                        </ul>
-                        <br><b>Cliques ici pour plus de détails</b> <a href="Console-IT.pdf" target="_blank">ouvrez-moi</a>
-
-                        <h2>Durant ce stage j'ai réaliser un site vitrine pour l'entreprise Console IT</h2>
-                        <p>
-                            Lors de mon stage de première année de BTS SIO, j'ai réalisé un site web de deux manières. D'abord avec WordPress, ce qui m'a permis de me familiariser avec la gestion de contenu et l'utilisation de plugins pour ajouter des fonctionnalités. Ensuite, j'ai refait le site en HTML afin de travailler directement sur la structure et le design, tout en renforçant mes compétences en CSS et en responsive design.                        </p>
-                        <div>
-                            <h2>Outils utilisés</h2>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>YouTube</li>
-                                <li>WordPress</li>
-                                <li>Local</li>
-                            </ul>
+                    <div>
+                        <h3 class="text-slate-500 uppercase text-[10px] font-bold tracking-widest mb-2">Stack Technique</h3>
+                        <div class="flex flex-wrap gap-2 mt-1">
+                            <span class="text-[10px] bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded border border-indigo-500/20 font-bold">REACT NATIVE</span>
+                            <span class="text-[10px] bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded border border-indigo-500/20 font-bold">NODE.JS</span>
+                            <span class="text-[10px] bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded border border-indigo-500/20 font-bold">POSTGRESQL</span>
                         </div>
-                        <h2>Problèmes rencontrés</h2>
-                        <p>
-                            Avec WordPress, il était simple d'ajouter des éléments interactifs, tandis qu'en HTML, j'ai dû les coder manuellement, ce qui m'a aidé à mieux comprendre leur fonctionnement. J'ai surmonté ces défis grâce à des recherches et à l'aide de mon tuteur de stage.
+                    </div>
+                    <div>
+                        <h3 class="text-slate-500 uppercase text-[10px] font-bold tracking-widest mb-2">Période</h3>
+                        <p class="text-white font-medium">2023 — 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        </p>
-                        <h2>Compétences acquises</h2>
-                        <p>
-                            Ce stage m'a permis de découvrir différentes approches de création web, de renforcer mes compétences techniques, de développer mon autonomie et ma capacité de résolution de problèmes. Cette expérience enrichissante m'a aidé à mettre en pratique mes connaissances et à en acquérir de nouvelles en développement web.
-                        </p>
+        <!-- Le Challenge -->
+        <section class="container mx-auto px-6 mb-24">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6 uppercase tracking-tight">Le Challenge</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        L'objectif principal était de centraliser la gestion des techniciens sur le terrain. Face à une fragmentation des outils existants, il était impératif de concevoir une application mobile unique capable de répondre aux exigences métiers spécifiques de Console-IT.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Le défi technique majeur résidait dans la capacité du système à garantir la <span class="text-indigo-400">persistance des données</span> en zone blanche (connexion instable), tout en assurant une synchronisation bidirectionnelle fluide avec l'inventaire matériel centralisé.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-indigo-500/10 blur-2xl rounded-full"></div>
+                    <img src="images/Site-Console-IT.png" alt="Console IT Dashboard" class="relative rounded-xl border border-slate-800 shadow-2xl">
+                </div>
+            </div>
+        </section>
 
-                        <h2>Conclusion</h2>
-                        <p>
-                            Donc pour conclure, ce stage m'a permis de découvrir les différentes approches de création de sites web, de renforcer mes compétences en développement et de mieux comprendre les enjeux techniques de la création d'un site. J'ai également pu travailler en autonomie , ce qui m'a permis de développer ma capacité d'adaptation et de résolution de problèmes. Ce projet a été une expérience enrichissante qui m'a permis de mettre en pratique mes connaissances et de développer de nouvelles compétences dans le domaine du développement web.
+        <!-- Fonctionnalités Clés -->
+        <section class="bg-slate-900/50 py-24 section-divider">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white mb-16 text-center uppercase tracking-widest">Fonctionnalités Clés</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Feature 1 -->
+                    <div class="p-8 glass rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition group">
+                        <i data-lucide="map-pin" class="text-indigo-500 mb-6 w-8 h-8 group-hover:scale-110 transition duration-300"></i>
+                        <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest italic">Géolocalisation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Suivi en temps réel des interventions pour une optimisation intelligente des tournées et une réactivité accrue.
+                        </p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="p-8 glass rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition group">
+                        <i data-lucide="package" class="text-indigo-500 mb-6 w-8 h-8 group-hover:scale-110 transition duration-300"></i>
+                        <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest italic">Inventaire Portable</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Flux de gestion du matériel (stock, sorties, retours) opéré directement depuis le mobile via lecture de codes-barres.
+                        </p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="p-8 glass rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition group">
+                        <i data-lucide="wifi-off" class="text-indigo-500 mb-6 w-8 h-8 group-hover:scale-110 transition duration-300"></i>
+                        <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest italic">Mode Offline (V2)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Stratégie de cache local robuste assurant la continuité de saisie et synchronisation atomique dès restauration du réseau.
+                        </p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="p-8 glass rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition group">
+                        <i data-lucide="layout-dashboard" class="text-indigo-500 mb-6 w-8 h-8 group-hover:scale-110 transition duration-300"></i>
+                        <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest italic">Dashboard Manager</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Interface d'administration web centralisée pour le pilotage des équipes, l'analyse des KPIs et la gestion des tickets.
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-info">
-                        <h3>Project information</h3>
-                        <ul>
-                            <li><strong>Category</strong>Web</li>
-                            <li><strong>Client</strong> Console IT</li>
-                            <li><strong>Project date</strong> 07 juilet, 2023</li>
-                        </ul>
+        <!-- Architecture Technique -->
+        <section class="container mx-auto px-6 py-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-white mb-8 uppercase tracking-tight">Architecture & Qualité Logicielle</h2>
+                <div class="p-10 glass rounded-3xl border border-slate-800 text-left">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i data-lucide="shield-check" class="text-indigo-500 mr-4 w-6 h-6 mt-1"></i>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1 uppercase text-[10px] tracking-widest italic">Sécurité & Auth</h4>
+                                    <p class="text-slate-400 text-sm">Implémentation d'une architecture REST sécurisée par JWT (JSON Web Tokens) avec gestion de refresh tokens.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="database" class="text-indigo-500 mr-4 w-6 h-6 mt-1"></i>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1 uppercase text-[10px] tracking-widest italic">Data Layer</h4>
+                                    <p class="text-slate-400 text-sm">Utilisation de Knex.js pour la gestion des migrations et requêtes SQL, garantissant la <span class="text-indigo-400">scalabilité</span> du schéma PostgreSQL.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i data-lucide="git-branch" class="text-indigo-500 mr-4 w-6 h-6 mt-1"></i>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1 uppercase text-[10px] tracking-widest italic">Workflow Git</h4>
+                                    <p class="text-slate-400 text-sm">Adoption du Gitflow avec branches de features dédiées et revues de code systématiques en Peer Programming.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="code" class="text-indigo-500 mr-4 w-6 h-6 mt-1"></i>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1 uppercase text-[10px] tracking-widest italic">Typage Fort</h4>
+                                    <p class="text-slate-400 text-sm">Développement intégral en TypeScript pour réduire la dette technique et assurer une maintenance pérenne.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
+        </section>
 
-        </div>
-
-    </section><!-- /Portfolio Details Section -->
-
-</main>
-
-<footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-        <h3 class="sitename">ISHFAQ Umair</h3>
-        <div class="social-links d-flex justify-content-center">
-            <a href="mailto:ishfaqumair93380@gmail.com"><i class="bi bi-mailbox"></i></a>
-            <a href="https://github.com/UIshfaq"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/umair-ishfaq-660570338/"><i class="bi bi-linkedin"></i></a>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <span>Copyright</span> <strong class="px-1 sitename">ISHFAQ Umair</strong> <span>All Rights Reserved</span>
+        <!-- Galerie Mockups -->
+        <section class="container mx-auto px-6 mb-24">
+            <h2 class="text-2xl font-bold text-white mb-12 text-center uppercase tracking-widest">Aperçus de l'Interface</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="aspect-[9/16] bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="images/consoleConnexion.png" alt="Login Screen" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <div class="aspect-[9/16] bg-slate-900 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center p-4">
+                     <img src="images/Admin-tableauBord.png" alt="Dashboard" class="w-full h-auto rounded shadow-lg grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <div class="aspect-[9/16] bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="images/Site-Page-2.png" alt="Interface" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
             </div>
+        </section>
+    </main>
 
+    <footer class="py-12 border-t border-slate-800 bg-slate-950">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <p>© 2026 ISHFAQ Umair. Étude de cas Console-IT.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="mailto:ishfaqumair93380@gmail.com" class="hover:text-white transition italic font-medium tracking-tight">Email Pro</a>
+                <a href="https://github.com/UIshfaq" class="hover:text-white transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/umair-ishfaq-660570338/" class="hover:text-white transition">LinkedIn</a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<!-- Preloader -->
-<div id="preloader"></div>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
-
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
-
 </html>

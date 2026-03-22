@@ -1,272 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Détail de mon stage de 1er année</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: MyResume
-    * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-    * Updated: Jun 29 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Véliko — Détails du Projet | ISHFAQ UMAIR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #6366f1, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-inner { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
 </head>
+<body class="text-slate-200">
 
-<body class="portfolio-details-page">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 glass border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center text-sm font-semibold text-slate-300 hover:text-indigo-400 transition group">
+                <i data-lucide="arrow-left" class="mr-2 w-4 h-4 group-hover:-translate-x-1 transition"></i> Retour au Portfolio
+            </a>
+            <span class="hidden md:block text-xs uppercase tracking-widest text-slate-500 font-bold">Projet Académique : Véliko</span>
+        </nav>
+    </header>
 
-<header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-        <ul>
-            <li><a href="index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-            <!--            <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>-->
-            <!--            <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>-->
-            <!--            <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>-->
-            <!--            <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>-->
-            <!--            <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>-->
-        </ul>
-    </nav>
-
-</header>
-
-<main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-        <div class="container">
-            <nav class="breadcrumbs">
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current">Portfolio Details</li>
-                </ol>
-            </nav>
-            <h1>Projet java</h1>
-        </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-        <div class="container" data-aos="fade-up">
-
-            <div class="portfolio-details-slider swiper init-swiper">
-                <script type="application/json" class="swiper-config">
-                    {
-                        "loop": true,
-                        "speed": 600,
-                        "autoplay": {
-                            "delay": 5000
-                        },
-                        "slidesPerView": "auto",
-                        "navigation": {
-                            "nextEl": ".swiper-button-next",
-                            "prevEl": ".swiper-button-prev"
-                        },
-                        "pagination": {
-                            "el": ".swiper-pagination",
-                            "type": "bullets",
-                            "clickable": true
-                        }
-                    }
-                </script>
-                <div class="swiper-wrapper align-items-center">
-
-                    <div class="swiper-slide">
-                        <img src="images/veliko.png" alt="">
+    <main class="pt-32 pb-24">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-6 mb-20">
+            <div class="max-w-4xl">
+                <h2 class="text-indigo-500 font-semibold mb-2 tracking-widest uppercase text-xs">BTS SIO SLAM — Projet Fil Rouge</h2>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight uppercase">
+                    VÉLIKO — <span class="text-gradient">Localisation & Gestion de Vélopartage</span>
+                </h1>
+                
+                <div class="grid md:grid-cols-4 gap-6 p-8 glass rounded-2xl border border-slate-800">
+                    <div>
+                        <h3 class="text-slate-500 uppercase text-[10px] font-bold tracking-widest mb-2">Version</h3>
+                        <p class="text-white font-medium">V4.0.0</p>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="images/veliko_connection.png">
+                    <div>
+                        <h3 class="text-slate-500 uppercase text-[10px] font-bold tracking-widest mb-2">Framework</h3>
+                        <p class="text-white font-medium">Symfony</p>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="images/veliko_station.png">
+                    <div>
+                        <h3 class="text-slate-500 uppercase text-[10px] font-bold tracking-widest mb-2">Base de données</h3>
+                        <p class="text-white font-medium">MySQL</p>
                     </div>
-
-
+                    <div>
+                        <h3 class="text-slate-500 uppercase text-[10px] font-bold tracking-widest mb-2">APIs</h3>
+                        <p class="text-white font-medium">Véliko, OpenStreetMap</p>
+                    </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
             </div>
+        </section>
 
-            <div class="row justify-content-between gy-4 mt-4">
-                <div class="col-lg-8" data-aos="fade-up">
-                    <div class="portfolio-description">
-                       <h2>But du projet</h2>
-                        <p>
-                           - Développement d’un site web permettant de localiser les stations Vélib et de consulter le nombre de vélos disponibles (mécaniques ou électriques). <br>
-                            - Possibilité pour les utilisateurs de créer un compte, se connecter et ajouter des stations en favoris.<br>
-                            - Sécurisation du site et conformité aux normes RGPD pour protéger les données personnelles.<br>
-                            - Mise en place d’un espace administrateur pour assurer le bon fonctionnement et la gestion des erreurs.<br>
-                            - Travail en équipe avec une répartition des tâches et une communication régulière pour garantir la cohérence du projet.<br>
-                        </p>
+        <!-- Objectifs -->
+        <section class="container mx-auto px-6 mb-24">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-6 uppercase tracking-tight italic">But du Projet</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="target" class="text-indigo-500 mr-3 w-5 h-5 mt-1 shrink-0"></i>
+                            <span class="text-slate-400">Développement d’un site web permettant de localiser les stations Vélib et de consulter la disponibilité en temps réel.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="users" class="text-indigo-500 mr-3 w-5 h-5 mt-1 shrink-0"></i>
+                            <span class="text-slate-400">Gestion complète des comptes utilisateurs : inscription, connexion sécurisée et gestion des favoris.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="shield-check" class="text-indigo-500 mr-3 w-5 h-5 mt-1 shrink-0"></i>
+                            <span class="text-slate-400">Sécurisation des données et conformité aux normes RGPD (suppression de compte, protection des données).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="settings" class="text-indigo-500 mr-3 w-5 h-5 mt-1 shrink-0"></i>
+                            <span class="text-slate-400">Interface d'administration (CRUD) pour la gestion des utilisateurs et le monitoring du parc.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <img src="images/veliko.png" alt="Véliko Map" class="rounded-xl border border-slate-800 shadow-2xl grayscale hover:grayscale-0 transition duration-500">
+                    <img src="images/veliko_station.png" alt="Station Detail" class="rounded-xl border border-slate-800 shadow-xl grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </section>
 
-                        <h2>Informations sur le projet</h2>
-                        <p><b>Version actuelle : </b>V4.0.0</p>
-                        <p><b>Langages utilisés : </b>TWIG, PHP, JAVA</p>
-                        <p><b>Base de données : </b>MySQL</p>
-                        <p><b>Framework : </b>Symfony, EduFrame</p>
-                        <p><b>API (application program interface): </b>API Véliko, OpenStreetMap</p>
-                        <h2>Les versions du projet</h2>
-                        <div class="versions-container">
-                            <div class="version">
-                                <p><b>V1.0.0 :</b><br>
-                                    - 1/ Affichage d’une map<br>
-                                    - 2/ Affichage des stations sur la map<br>
-                                    - 3/ Zoom +/-<br>
-                                    - 4/ Géolocalisation de la position du client sur la map<br>
-                                    - 5/ L'information bulle sur la station survolée par la souris<br>
-                                    - Nom de la station<br>
-                                    - Nombre de vélo disponible<br>
-                                    - Vélo classique<br>
-                                    - Vélo électrique<br>
-                                </p>
-                            </div>
-                            <div class="version">
-                                <p><b>V2.0.0 :</b><br>
-                                    - Inscription utilisateur<br>
-                                    - Validation de l’identité de l’utilisateur<br>
-                                    - Compte utilisateur<br>
-                                    - Changement de nom, prénom, date de naissance, adresse, code postal, ville<br>
-                                    - Changement de mot de passe sécurisé <br>
-                                    - Authentification<br>
-                                    - Déconnexion (logout)<br>
-                                    - Respect de la RGPD sur la possibilité de supprimer son compte<br>
-                                    - Mettre des stations en favori depuis la map et depuis l’espace utilisateur<br>
-                                </p>
-                            </div>
-                            <div class="version">
-                                <p><b>V3.0.0 :</b><br>
-                                    - Gestion des utilisateurs<br>
-                                    - Administration des utilisateurs (CRUD)<br>
-                                    - Supprimer un utilisateur.<br>
-                                    - Possibilité de bloquer un utilisateur<br>
-                                    - Possibilité de forcer le changement de mot de passe d’un utilisateur<br>
-<!--                                    - Gestion du parc ⇒ MAP<br>-->
-                                    - La visualisation d’une MAP qui affiche l’ensemble des vélos.<br>
-                                </p>
-                            </div>
-                            <div class="version">
-                                <p><b>V4.0.0 :</b><br>
-                                    - Dashboard ⇒ STATS<br>
-                                    - Cette partie doit être présentée sous différentes formes : pourcentages, listes de données, graphiques, valeurs, …<br>
-<!--                                    - Quel est l’utilisateur le plus actif ? (ex aequo possible)<br>-->
-<!--                                    - Le nombre de vélos disponibles sur une station<br>-->
-<!--                                    - Le nombre total de réservations sur une période<br>-->
-<!--                                    - Le pourcentage de réservations sur une station<br>-->
-<!--                                    - etc, etc<br>-->
-<!--                                    - Cette partie doit être riche en qualité et en nombre de statistiques.<br>-->
-                                    - réservation des vélos. Modifications du nombre de vélos dans l'api.
+        <!-- Timeline des Versions -->
+        <section class="bg-slate-900/50 py-24 border-y border-slate-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white mb-16 text-center uppercase tracking-widest">Évolution du Système</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- V1 -->
+                    <div class="p-6 glass rounded-2xl border border-slate-800">
+                        <span class="text-indigo-500 font-bold text-xs mb-4 block">V1.0.0 — FONDATIONS</span>
+                        <ul class="text-xs text-slate-400 space-y-2">
+                            <li>• Intégration OpenStreetMap</li>
+                            <li>• Géolocalisation client</li>
+                            <li>• Bulles d'info dynamiques</li>
+                            <li>• Disponibilité temps réel</li>
+                        </ul>
+                    </div>
+                    <!-- V2 -->
+                    <div class="p-6 glass rounded-2xl border border-slate-800">
+                        <span class="text-indigo-500 font-bold text-xs mb-4 block">V2.0.0 — UTILISATEURS</span>
+                        <ul class="text-xs text-slate-400 space-y-2">
+                            <li>• Inscription & Authentification</li>
+                            <li>• Profil sécurisé (Bcrypt)</li>
+                            <li>• Gestion des Favoris</li>
+                            <li>• Conformité RGPD</li>
+                        </ul>
+                    </div>
+                    <!-- V3 -->
+                    <div class="p-6 glass rounded-2xl border border-slate-800">
+                        <span class="text-indigo-500 font-bold text-xs mb-4 block">V3.0.0 — ADMIN</span>
+                        <ul class="text-xs text-slate-400 space-y-2">
+                            <li>• Dashboard Administrateur</li>
+                            <li>• Gestion CRUD Utilisateurs</li>
+                            <li>• Blocage de comptes</li>
+                            <li>• Supervision du parc</li>
+                        </ul>
+                    </div>
+                    <!-- V4 -->
+                    <div class="p-6 glass rounded-2xl border border-slate-800">
+                        <span class="text-indigo-500 font-bold text-xs mb-4 block">V4.0.0 — DATA & STATS</span>
+                        <ul class="text-xs text-slate-400 space-y-2">
+                            <li>• Statistiques avancées</li>
+                            <li>• Graphiques & Listes</li>
+                            <li>• Réservation de vélos</li>
+                            <li>• Synchronisation API</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Difficultés & Compétences -->
+        <section class="container mx-auto px-6 py-24">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-8 uppercase tracking-tight italic">Défis Techniques</h2>
+                    <div class="space-y-8">
+                        <div class="card-inner p-6 rounded-xl">
+                            <h4 class="text-indigo-400 font-bold mb-2 text-sm uppercase">Architecture de Données</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Optimisation des services pour la persistance et la liaison entre les sessions, les favoris et les réservations.</p>
+                        </div>
+                        <div class="card-inner p-6 rounded-xl">
+                            <h4 class="text-indigo-400 font-bold mb-2 text-sm uppercase">Maîtrise du Framework</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Apprentissage intensif de Symfony : routage complexe, contrôleurs de services et moteur de template Twig.</p>
                         </div>
                     </div>
-                        <br>
-                        <h2>Difficultés rencontrées</h2>
-                        <p>
-                        <h3>Base de données : </h3>
-                        <p>
-                            L'utilisation et l'optimisations des donées dans les différentes services de l'application.(Connexion, Station, Utilisateur, Reservation, Favoris, Admin, etc...).
-                        </p>
-                        <h3>API : </h3>
-                        <p>
-                            L'intégration de l'API Vélib' a posé plusieurs défis, notamment son implémentation correcte sur la carte, son accessibilité dans l'espace utilisateur et la synchronisation des données entre les deux.
-                        </p>
-                        <h3>Framework</h3>
-                        <p>
-                            La prise en main du framework Symfony a été un défi, notamment pour la gestion des routes, des contrôleurs et des vues. La sécurité et la conformité aux normes RGPD ont également été des points d'attention.
-                        </p>
-                        <h2>Compétences acquises</h2>
-
-                        <p>
-                            Mes projets m'ont permis de développer des compétences en travail d'équipe avec GitHub, en gestion de bases de données, en sécurité et en développement avec Symfony. J'ai aussi appris à intégrer des API et à répondre aux besoins des clients.
-                        </p>
-
-                        <h2>Conclusion</h2>
-                        <p>
-                            En conclusion, le projet Véliko a été une expérience enrichissante qui m'a permis d'appliquer mes connaissances, d'acquérir de nouvelles compétences et de mieux appréhender les défis du développement web.
-                        </p>
                 </div>
-
-<!--                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">-->
-<!--                    <div class="portfolio-info">-->
-<!--                        <h3>Project information</h3>-->
-<!--                        <ul>-->
-<!--                            <li><strong>Category</strong>Web</li>-->
-<!--                            <li><strong>Project date</strong> 24, Mars 2025</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-8 uppercase tracking-tight italic">Acquis Professionnels</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 glass rounded-xl border border-slate-800">
+                            <i data-lucide="check-circle" class="text-indigo-500 mr-4 w-5 h-5"></i>
+                            <span class="text-slate-400 text-sm">Travail collaboratif (GitHub / GitFlow)</span>
+                        </div>
+                        <div class="flex items-center p-4 glass rounded-xl border border-slate-800">
+                            <i data-lucide="check-circle" class="text-indigo-500 mr-4 w-5 h-5"></i>
+                            <span class="text-slate-400 text-sm">Gestion avancée de bases de données SQL</span>
+                        </div>
+                        <div class="flex items-center p-4 glass rounded-xl border border-slate-800">
+                            <i data-lucide="check-circle" class="text-indigo-500 mr-4 w-5 h-5"></i>
+                            <span class="text-slate-400 text-sm">Intégration d'API tierces RESTful</span>
+                        </div>
+                        <div class="flex items-center p-4 glass rounded-xl border border-slate-800">
+                            <i data-lucide="check-circle" class="text-indigo-500 mr-4 w-5 h-5"></i>
+                            <span class="text-slate-400 text-sm">Sécurité & Conformité RGPD</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
+        <!-- Conclusion -->
+        <section class="container mx-auto px-6 mb-24 text-center py-16 bg-slate-900/30 rounded-3xl border border-slate-800/50">
+            <h2 class="text-3xl font-bold text-white mb-6 uppercase tracking-tight italic">Conclusion</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed italic">
+                En conclusion, le projet Véliko a été une expérience enrichissante qui m'a permis d'appliquer mes connaissances, d'acquérir de nouvelles compétences et de mieux appréhender les défis du développement web.
+            </p>
+        </section>
+    </main>
 
-    </section><!-- /Portfolio Details Section -->
-
-</main>
-
-<footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-        <h3 class="sitename">ISHFAQ Umair</h3>
-        <div class="social-links d-flex justify-content-center">
-            <a href="mailto:ishfaqumair93380@gmail.com"><i class="bi bi-mailbox"></i></a>
-            <a href="https://github.com/UIshfaq"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/umair-ishfaq-660570338/"><i class="bi bi-linkedin"></i></a>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <span>Copyright</span> <strong class="px-1 sitename">ISHFAQ Umair</strong> <span>All Rights Reserved</span>
+    <footer class="py-12 border-t border-slate-800 bg-slate-950">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <p>© 2026 ISHFAQ Umair. Étude de cas Véliko.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="mailto:ishfaqumair93380@gmail.com" class="hover:text-white transition italic font-medium tracking-tight">Contact Pro</a>
+                <a href="https://github.com/UIshfaq" class="hover:text-white transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/umair-ishfaq-660570338/" class="hover:text-white transition">LinkedIn</a>
             </div>
-
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<!-- Preloader -->
-<div id="preloader"></div>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
-
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
-
 </html>
